@@ -75,14 +75,15 @@ strong { font-weight: 700; }
 .topbar a:hover { background: rgba(255,255,255,.1); color: #fff; }
 .topbar a.cta { background: var(--copper); }
 .topbar a.cta:hover { background: var(--copper-dk); }
-.hero-text { padding: 56px 0 0; display: grid; gap: 16px; max-width: 760px; }
+.hero-text { padding: 56px 0 0; display: grid; gap: 16px; max-width: 760px; margin: 0 auto; text-align: center; justify-items: center; }
 .hero .eyebrow { color: #e4b48f; }
 .hero h1 { font-size: clamp(38px, 6.5vw, 64px); font-weight: 800; line-height: 1.02; letter-spacing: -.025em; }
 .hero h1 span { color: #b8c6ff; }
 .lede { margin: 0; color: rgba(255,255,255,.82); font-size: 18.5px; max-width: 62ch; }
-.facts { display: flex; flex-wrap: wrap; gap: 10px; margin: 8px 0 0; padding: 0; list-style: none; }
+.facts { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin: 8px 0 0; padding: 0; list-style: none; }
 .facts li { font-size: 14.5px; color: rgba(255,255,255,.85); background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.18); border-radius: 999px; padding: 6px 14px; backdrop-filter: blur(4px); }
 .facts strong { color: #fff; }
+.facts li.br { flex-basis: 100%; height: 0; padding: 0; margin-top: -10px; border: 0; background: none; backdrop-filter: none; }
 
 /* Page body */
 .wrap { max-width: 1080px; margin: -72px auto 0; padding: 0 max(16px, env(safe-area-inset-left, 0px)) 72px; display: grid; gap: 40px; position: relative; z-index: 2; }
@@ -189,7 +190,7 @@ th { font-family: var(--font-display); font-weight: 700; color: var(--navy); fon
     <div class="topbar">
       <a class="logo" href="https://beyondconference.com/" aria-label="BEYOND Biohacking Conference home"><img src="https://beyondconference.com/wp-content/uploads/2026/01/logo.webp" alt="BEYOND Biohacking Conference" width="90" height="46"></a>
       <nav aria-label="Site">
-        <a href="https://beyondconference.com/">Conference site</a>
+        <a href="https://beyondconference.com/">Conference Site</a>
         <a class="cta" id="search-cta" href="#q">Search the FAQs</a>
       </nav>
     </div>
@@ -198,9 +199,10 @@ th { font-family: var(--font-display); font-weight: 700; color: var(--navy); fon
       <h1>Exhibitor <span>FAQs</span></h1>
       <p class="lede">Answers to the questions Exhibiting Partners ask most about booth logistics, registration, shipping, setup, deadlines and more. Full details are in the 2027 Exhibitor Guide and your Exhibiting Partner Portal.</p>
       <ul class="facts">
-        <li><strong>June 2–4, 2027</strong></li>
         <li><strong>Fairmont Austin</strong> · 101 Red River Street, Austin, TX 78701</li>
-        <li><strong>4,000+ attendees</strong></li>
+        <li class="br" aria-hidden="true"></li>
+        <li><strong>June 2–4, 2027</strong></li>
+        <li><strong>4,000+ Attendees</strong></li>
       </ul>
     </div>
   </div>
